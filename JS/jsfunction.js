@@ -1,6 +1,6 @@
 function hello(user="Guest"){
-    console.log(`Hello $(user)`)
+    console.log('Hello $(user)')
 }
 
-hello(`Aahish`);
+hello('Aahish');
 hello();

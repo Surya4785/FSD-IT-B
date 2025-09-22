@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #a2a805;
+        }
+        .register-box {
+            background: #5fdbfb;
+            padding: 32px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        label {
+            margin-bottom: 4px;
+        }
+        input, select {
+            margin-bottom: 16px;
+            width: 250px;
+            padding: 6px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .gender-group label {
+            margin: 0 10px 0 0;
+        }
+        .gender-group input[type="radio"] {
+            width: auto;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-box">
+        <h1>Welcome to Registration</h1>
+        <form action="register.jsp">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="dates">DOB</label>
+            <input type="date" id="dates" name="dates" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="gender-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <label for="sem">Semester:</label>
+            <select id="sem" name="sem" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="branch">Branch:</label> 
+            <select id="branch" name="branch" >
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+            <label for="upload">Upload 12th Marksheet</label>
+            <input type="file" id="upload" name="upload" required>
+            <div style="display: flex; gap: 10px;">
+                <input type="submit" value="Register" style="background-color: green; color: white; border: none; padding: 8px 16px; cursor: pointer;">
+                <input type="reset" id="reset" value="Reset" style="background-color: red; color: white; border: none; padding: 8px 16px; cursor: pointer;">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Dom Example</title>
+    <script>
+        function addpara(){
+            // const para = document.createElement("p");
+            // para.textContent = "This is new paragraph";
+            // para.style.color = "red";
+            // para.style.color = "blue";
+            // document.body.appendChild(para1);
+            const id = document.querySelectorAll("div");
+            id.forEach((id1)=>{
+                const para = document.createElement("p");
+            para.textContent = "This is new paragraph";
+            para.style.color = "red";
+            para.style.color = "green";
+            document.body.appendChild(para1);
+                id1.appendChild(para);
+            })
+            
+            
+        }
+    </script>
+</head>
+<body>
+        <button onclick="addpara()"> ADD PARAGRAPH</button>
+        <p>This is old paragraph</p>
+    <div id="para1"> </div>
+    <div id="para2"> </div>
+    <div id="para3"> </div>
+</body>
+</html>

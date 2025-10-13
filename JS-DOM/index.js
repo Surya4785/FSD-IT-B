@@ -1,0 +1,12 @@
+const child=document.createElement("div");
+child.className="card";
+const image=document.createElement("img");
+image.src="https://images.search.yahoo.com/images/view;_ylt=Awr4.7VVnexoAoIP3Z6JzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzNlMzE5ZmM4ODJiNGY1NzZjNmQzMjQ1Mzk0ZGYzZTgyBGdwb3MDNARpdANiaW5n?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dreact%2Bimage%26type%3DE210US885G91921-E210US885G91921%26fr%3Dmcafee%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D4&w=2212&h=1210&imgurl=ms314006.github.io%2Fstatic%2Fb7a8f321b0bbc07ca9b9d22a7a505ed5%2F97b31%2FReact.jpg&rurl=https%3A%2F%2Freactjsguru.com%2Freact-tutorial%2F&size=39KB&p=react+image&oid=3e319fc882b4f576c6d3245394df3e82&fr2=piv-web&fr=mcafee&tt=Learn+React+Tutorial+for+Beginners+To+Professional+-+React+Js+Guru&b=0&ni=21&no=4&ts=&tab=organic&sigr=L2J2qfW6gGtO&sigb=gzNhJtRmoMQt&sigi=i2oKTbO6Ql8W&sigt=dA3OiMeOlXXh&.crumb=kFVWWoEQGKR&fr=mcafee&fr2=piv-web&type=E210US885G91921-E210US885G91921";
+image.width="150";
+image.height="150";
+const h4=document.createElement("h4");
+h4.innerText="Price: 350/-";
+child.appendChild(image);
+child.appendChild(h4);
+const parent=document.getElementById("root");
+parent.appendChild(child);

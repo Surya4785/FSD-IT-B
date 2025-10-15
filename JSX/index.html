@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store JSX</title>
+    <style>
+        .card {
+            border: 1px solid black;
+            width: 250px;
+            height: 400px;
+            text-align: center;
+            box-shadow: 2px 2px 5px grey;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-right: 20px;
+            background: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>Book Store</h2></center>
+    <div id="root"></div>
+    <!-- React and Babel CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- JSX Script -->
+    <script type="text/babel">
+        const Book = (props) => (
+            <div className="card">
+                <img src={props.src} width="220" height="270" alt="book image" />
+                <h3>{props.title}</h3>
+                <h4>Price : {props.price}</h4>
+                <button>Add to Cart</button>
+            </div>
+        );
+
+        const books = [
+            {
+                src: "https://m.media-amazon.com/images/I/91ccGUt2sbL.jpg",
+                title: "Physics",
+                price: "₹350"
+            },
+            {
+                src: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS2CH6jKQHJ8cXp5GE_akZhl_V9vMQro_IzsIqMSa8XWsj-uUFIm1tQmJxumWQeCLGa5XK4z5TChxBJUXZSrnLD0iAZeRdIiyLFrsj-m42LuIOHgqbmvCAT",
+                title: "Chemistry",
+                price: "₹250"
+            },
+            {
+                src: "https://m.media-amazon.com/images/I/513byzZGrWL._SY522_.jpg",
+                title: "Mathematics",   
+                price: "₹150"
+            }
+        ];
+
+        const App = () => (
+            <div>
+                {books.map((book, idx) => (
+                    <Book key={idx} src={book.src} title={book.title} price={book.price} />
+                ))}
+            </div>
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

@@ -11,7 +11,6 @@ function Book(){
     const child=React.createElement("div",{className:"card"},image,h3,h4,btn);
     return child;
 }
-// comment
 const parent=document.getElementById("root");
 const root=ReactDOM.createRoot(parent).render(React.createElement(Book));
 root.render(React.createElement(Book));

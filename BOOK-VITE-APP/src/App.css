@@ -1,0 +1,27 @@
+/* ...existing code... */
+ .booklist{
+   display: flex;
+    display: flex;
+    flex-direction: column;
+   gap: 16px;
+  padding: 12px;
+ }
+
+.books-row{
+    display: flex;
+    gap: 16px;           /* space between book boxes */
+    align-items: flex-start;
+    flex-wrap: nowrap;   /* keep all books on the same lane */
+    overflow-x: auto;    /* allow horizontal scroll on small screens */
+}
+
+.books-row > * {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    padding: 12px;
+    width: 220px;        /* fixed box width for each book */
+    border-radius: 6px;
+    flex: 0 0 auto;
+}
+/* ...existing code... */

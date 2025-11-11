@@ -43,9 +43,7 @@ Tools: Postman, VS Code, npm, Git Bash
 
 ⚙️ Getting Started
 
-Clone the repository
-
-git clone https://github.com/Surya4785/FSD-IT-B
+Clone the repository :- git clone https://github.com/Surya4785/FSD-IT-B
 
 1) Navigate into the folder
 
@@ -59,10 +57,7 @@ git clone https://github.com/Surya4785/FSD-IT-B
 
 6) npm run dev
 
-🧑‍💻 Instructor
-
-Prof. [Dr. Ashish Bajpai] Department of Computer Science Engineering
-[ABES Engineering College]
+🧑‍💻 Instructor :- Prof. [Dr. Ashish Bajpai] [ABES Engineering College]
 
 🤝 Contributors :- Students of the Full Stack Development Batch — [3rd year/Semester - 5th]
 

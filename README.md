@@ -10,19 +10,17 @@ Students will learn to design, build, and deploy full-stack applications using t
 
 🧠 Learning Objectives
 
-By the end of this course, students will be able to:
+=> Develop dynamic, responsive web interfaces using HTML, CSS, and JavaScript (React)
 
-Develop dynamic, responsive web interfaces using HTML, CSS, and JavaScript (React)
+=> Design RESTful APIs using Node.js and Express.js
 
-Design RESTful APIs using Node.js and Express.js
+=> Implement CRUD operations with MongoDB / MySQL
 
-Implement CRUD operations with MongoDB / MySQL
+=> Manage authentication and security using JWT / OAuth
 
-Manage authentication and security using JWT / OAuth
+=> Deploy full-stack applications on Render / Vercel / AWS / Netlify
 
-Deploy full-stack applications on Render / Vercel / AWS / Netlify
-
-Collaborate effectively with version control using Git and GitHub
+=> Collaborate effectively with version control using Git and GitHub
 
 🛠️ Tech Stack
 
@@ -34,6 +32,7 @@ Deployment: Vercel / Render / Netlify
 Tools: Postman, VS Code, npm, Git Bash
 
 📚 Structure
+
 📦 fullstack-development-class
  ┣ 📂 frontend/        # React application code
  ┣ 📂 backend/         # Express server and API routes
@@ -46,38 +45,27 @@ Tools: Postman, VS Code, npm, Git Bash
 
 Clone the repository
 
-git clone https://github.com/Surya4785/fullstack-class.git
+git clone https://github.com/Surya4785/FSD-IT-B
 
+1) Navigate into the folder
 
-Navigate into the folder
+2) cd fullstack-class
 
-cd fullstack-class
+3) Install dependencies
 
+4) npm install
 
-Install dependencies
+5) Start both servers
 
-npm install
-
-
-Start both servers
-
-npm run dev
+6) npm run dev
 
 🧑‍💻 Instructor
 
-Prof. [Dr. Ashish Bajpai]
-Department of Computer Science Engineering
+Prof. [Dr. Ashish Bajpai] Department of Computer Science Engineering
 [ABES Engineering College]
 
-🤝 Contributors
+🤝 Contributors :- Students of the Full Stack Development Batch — [3rd year/Semester - 5th]
 
-Students of the Full Stack Development Batch — [3rd year/Semester - 5th]
+👉 View Project :- (https://github.com/Surya4785/FSD-IT-B)
 
-🌐 Live Demo
-
-👉 View Project
- (https://github.com/Surya4785/FSD-IT-B)
-
-📜 License
-
-This project is open source under the MIT License.
+📜 License :- This project is open source under the MIT License.

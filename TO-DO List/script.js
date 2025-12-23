@@ -33,10 +33,10 @@ addBtn.onclick = () => {
 
     li.append(span, delBtn);
     list.appendChild(li);
-
     input.value = "";
 };
 
 inputBox.append(input, addBtn);
 app.append(title, inputBox, list);
+
 document.body.appendChild(app);
